@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-st.set_page_config(page_title="QueryMate: Natural Language to SQL")
+st.set_page_config(page_title="Text to SQL")
 
 st.markdown("# Text to SQL - PagilaDB🤖")
 st.markdown('''Your friendly assistant for converting natural language queries into SQL statements!
