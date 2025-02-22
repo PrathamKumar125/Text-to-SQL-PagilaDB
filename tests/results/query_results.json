@@ -1,0 +1,282 @@
+{
+  "1": {
+    "natural_language_query": "List all actors' first and last names.",
+    "sql_query": "SELECT first_name, last_name FROM actor;",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "2": {
+    "natural_language_query": "Show the titles of all films in the database.",
+    "sql_query": "SELECT title FROM film;",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "3": {
+    "natural_language_query": "Get the names of all cities.",
+    "sql_query": "SELECT city FROM city;",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "4": {
+    "natural_language_query": "List all categories available for films.",
+    "sql_query": "SELECT name FROM category;",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "5": {
+    "natural_language_query": "Show the first name and last name of all customers.",
+    "sql_query": "SELECT first_name, last_name FROM customer;",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "6": {
+    "natural_language_query": "Show all films released in 2006.",
+    "sql_query": "SELECT * FROM film WHERE release_year = 2006;",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "7": {
+    "natural_language_query": "Find all actors with the last name \"Smith.\"",
+    "sql_query": "SELECT * FROM actor WHERE last_name = 'Smith';",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "8": {
+    "natural_language_query": "List all customers who are from the city of “New York.”",
+    "sql_query": null,
+    "difficulty": "Easy",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "9": {
+    "natural_language_query": "Get all stores located in the country “India.”",
+    "sql_query": "SELECT store.store_id, address.address, city.city, country.country FROM store JOIN address ON store.address_id = address.address_id JOIN city ON address.city_id = city.city_id JOIN country ON city.country_id = country.country_id WHERE country.country = 'India';",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "10": {
+    "natural_language_query": "Show all films with a rental rate greater than $2.99.",
+    "sql_query": "SELECT * FROM film WHERE rental_rate > 2.99;",
+    "difficulty": "Easy",
+    "is_valid": true,
+    "error": null
+  },
+  "11": {
+    "natural_language_query": "How many films are there in each category?",
+    "sql_query": "SELECT c.name, COUNT(fc.film_id) FROM category c JOIN film_category fc ON c.category_id = fc.category_id GROUP BY c.name;",
+    "difficulty": "Medium",
+    "is_valid": true,
+    "error": null
+  },
+  "12": {
+    "natural_language_query": "What is the total number of actors?",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "13": {
+    "natural_language_query": "Get the total payment received in June 2022.",
+    "sql_query": "SELECT SUM(amount) FROM payment WHERE payment_date BETWEEN '2007-06-01' AND '2007-06-30';",
+    "difficulty": "Medium",
+    "is_valid": true,
+    "error": null
+  },
+  "14": {
+    "natural_language_query": "Find the total number of rentals made last month.",
+    "sql_query": "SELECT COUNT(*) FROM rental WHERE DATE_TRUNC('month', rental_date) = DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month');",
+    "difficulty": "Medium",
+    "is_valid": true,
+    "error": null
+  },
+  "15": {
+    "natural_language_query": "How many films have a rating of “PG-13”?",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "16": {
+    "natural_language_query": "List all films along with their category names.",
+    "sql_query": "SELECT f.title, c.name FROM film f JOIN film_category fc ON f.film_id = fc.film_id JOIN category c ON fc.category_id = c.category_id;",
+    "difficulty": "Medium",
+    "is_valid": true,
+    "error": null
+  },
+  "17": {
+    "natural_language_query": "Show all actors who appeared in the film \"Inception.\"",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "18": {
+    "natural_language_query": "Get a list of all customers and the films they have rented.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "19": {
+    "natural_language_query": "List all staff members along with the stores they work at.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "20": {
+    "natural_language_query": "Find all films rented by customer \"John Doe.\"",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "21": {
+    "natural_language_query": "Show the top 5 films rented the most across all stores.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "22": {
+    "natural_language_query": "List all customers who have rented films in both store 1 and store 2.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "23": {
+    "natural_language_query": "Find all actors who have appeared in more than 10 films.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "24": {
+    "natural_language_query": "Get a list of customers who have made more than 5 payments.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "25": {
+    "natural_language_query": "List all films that are in both the \"Action\" and \"Comedy\" categories.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "26": {
+    "natural_language_query": "Show all rentals made in the last 7 days.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "27": {
+    "natural_language_query": "Get all payments made in February 2022.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "28": {
+    "natural_language_query": "List all films that have not been rented in the last 30 days.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "29": {
+    "natural_language_query": "Find all customers who registered in the last 6 months.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "30": {
+    "natural_language_query": "Show all staff members hired before January 1, 2020.",
+    "sql_query": null,
+    "difficulty": "Medium",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "31": {
+    "natural_language_query": "List the top 3 customers who have spent the most in each country.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "32": {
+    "natural_language_query": "Find the films that have been rented more times than the average number of rentals per film.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "33": {
+    "natural_language_query": "For each actor, show their name and the percentage of films they've acted in compared to the total films.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "34": {
+    "natural_language_query": "Show the average payment amount for each customer.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "35": {
+    "natural_language_query": "List all actors who have appeared in at least one film in each category.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "36": {
+    "natural_language_query": "Find customers who have rented more films this year than last year.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "37": {
+    "natural_language_query": "List the top 5 films with the highest revenue.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "38": {
+    "natural_language_query": "For each customer, show the number of films rented in the last month compared to the previous month.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "39": {
+    "natural_language_query": "Show the names of customers who have rented every film in the “Action” category.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  },
+  "40": {
+    "natural_language_query": "List customers who have rented the same film more than 3 times.",
+    "sql_query": null,
+    "difficulty": "Hard",
+    "is_valid": false,
+    "error": "API quota exceeded"
+  }
+}

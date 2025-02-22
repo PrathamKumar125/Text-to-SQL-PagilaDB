@@ -1,0 +1,41 @@
+Query Number,Natural Language Query,Difficulty
+1,List all actors' first and last names.,Easy
+2,Show the titles of all films in the database.,Easy
+3,Get the names of all cities.,Easy
+4,List all categories available for films.,Easy
+5,Show the first name and last name of all customers.,Easy
+6,Show all films released in 2006.,Easy
+7,"Find all actors with the last name ""Smith.""",Easy
+8,List all customers who are from the city of “New York.”,Easy
+9,Get all stores located in the country “India.”,Easy
+10,Show all films with a rental rate greater than $2.99.,Easy
+11,How many films are there in each category?,Medium
+12,What is the total number of actors?,Medium
+13,Get the total payment received in June 2022.,Medium
+14,Find the total number of rentals made last month.,Medium
+15,How many films have a rating of “PG-13”?,Medium
+16,List all films along with their category names.,Medium
+17,"Show all actors who appeared in the film ""Inception.""",Medium
+18,Get a list of all customers and the films they have rented.,Medium
+19,List all staff members along with the stores they work at.,Medium
+20,"Find all films rented by customer ""John Doe.""",Medium
+21,Show the top 5 films rented the most across all stores.,Medium
+22,List all customers who have rented films in both store 1 and store 2.,Medium
+23,Find all actors who have appeared in more than 10 films.,Medium
+24,Get a list of customers who have made more than 5 payments.,Medium
+25,"List all films that are in both the ""Action"" and ""Comedy"" categories.",Medium
+26,Show all rentals made in the last 7 days.,Medium
+27,Get all payments made in February 2022.,Medium
+28,List all films that have not been rented in the last 30 days.,Medium
+29,Find all customers who registered in the last 6 months.,Medium
+30,"Show all staff members hired before January 1, 2020.",Medium
+31,List the top 3 customers who have spent the most in each country.,Hard
+32,Find the films that have been rented more times than the average number of rentals per film.,Hard
+33,"For each actor, show their name and the percentage of films they've acted in compared to the total films.",Hard
+34,Show the average payment amount for each customer.,Hard
+35,List all actors who have appeared in at least one film in each category.,Hard
+36,Find customers who have rented more films this year than last year.,Hard
+37,List the top 5 films with the highest revenue.,Hard
+38,"For each customer, show the number of films rented in the last month compared to the previous month.",Hard
+39,Show the names of customers who have rented every film in the “Action” category.,Hard
+40,List customers who have rented the same film more than 3 times.,Hard
